@@ -1,1 +1,91 @@
-// Specific CSS for your home-page
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  p {
+    margin: 0;
+    padding: 12px;
+  }
+   font-family: 'Inconsolata', monospace;
+   background-color: black;
+   color: white;
+}
+
+.left-elements {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 22px;
+  img {
+    width:40px;
+  }
+
+}
+
+.right-elements {
+  display: flex;
+  align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+  }
+}
+
+.home-container {
+  width : 100vw;
+  height: calc(100vh - 56px);
+  position: absolute;
+  bottom:0;
+  right: 0;
+  background-image: url('https://images.pexels.com/photos/162389/lost-places-old-decay-ruin-162389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+
+}
+
+.elements {
+  margin: 150px 0 0 0;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.right {
+  width: 100%;
+}
+.left-container {
+  display: flex;
+  align-items: center;
+}
+
+.bouton {
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  background-color: #979ea5;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: normal;
+  opacity: 0.8;
+  font-weight: bolder;
+  &:hover {
+    background-color: red;
+  }
+}
+
+.home-title {
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bolder;
+  font-size: 56px;
+  padding: 15px 0;
+}
