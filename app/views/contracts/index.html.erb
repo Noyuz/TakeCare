@@ -1,17 +1,118 @@
 <h1>Contracts List</h1>
 
-<div class="card-product">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-  <div class="card-product-infos">
-    <ul>
-    <% @contracts.each do |contract| %>
-      <li>
-       <h4> <%= contract.nickname %> </h4>
-        <h2> <%= contract.description %> </h2>
-        <p> <%= contract.price %> </p>
-        <p> <%= contract.rank %> </p>
-      </li>
-    <% end %>
-    </ul>
+<div class= "row">
+  <div class="col-sm-12 col-lg-4">
+    <div class="card-product">
+      <img src="https://resize-elle.ladmedia.fr/r/625,,forcex/crop/625,437,center-middle,forcex,ffffff/img/var/plain_site/storage/images/loisirs/cinema/news/uma-thurman-veut-faire-un-kill-bill-3-avec-quentin-tarantino-2968832/55515980-1-fre-FR/Uma-Thurman-veut-faire-un-Kill-Bill-3-avec-Quentin-Tarantino.jpg">
+      <div class="card-product-infos">
+        <ul>
+        <% @contracts.each do |contract| %>
+          <li>
+           <h2> <%= contract.nickname %> </h2> <!--Ben-->
+            <p> <%= contract.description %> </p>
+            <p> <%= contract.price %> </p>
+            <p> <%= contract.rank %> </p>
+          </li>
+          <%= link_to "See your Selection !", contract_path(contract) %>
+        <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
+
+   <div class="col-sm-12 col-lg-4">
+    <div class="card-product">
+      <img src="https://www.french-stream.to/img/poster/leon.jpg">
+      <div class="card-product-infos">
+        <ul>
+        <% @contracts.each do |contract| %>
+          <li>
+           <h2> <%= contract.nickname %> </h2> <!--Léon-->
+            <p> <%= contract.description %> </p>
+            <p> <%= contract.price %> </p>
+            <p> <%= contract.rank %> </p>
+          </li>
+          <%= link_to "See your Selection !", contract_path(contract) %>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-12 col-lg-4">
+    <div class="card-product">
+      <img src="https://static.tvgcdn.net/feed/1/648/thumbs/12185648_1300x1733.jpg">
+      <div class="card-product-infos">
+        <ul>
+        <% @contracts.each do |contract| %>
+          <li>
+           <h2> <%= contract.nickname %> </h2> <!--Nikita-->
+            <p> <%= contract.description %> </p>
+            <p> <%= contract.price %> </p>
+            <p> <%= contract.rank %> </p>
+          </li>
+          <%= link_to "See your Selection !", contract_path(contract) %>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-12 col-lg-4">
+    <div class="card-product">
+      <img src="https://resizing.flixster.com/vZB0wMCjOFcG1sujS7Ag4qAYm54=/206x305/v1.bTsxMTIxOTUzNztqOzE4MTI5OzEyMDA7MTIwMDsxNjAw">
+      <div class="card-product-infos">
+        <ul>
+        <% @contracts.each do |contract| %>
+          <li>
+           <h2> <%= contract.nickname %> </h2> <!--Hitman-->
+            <p> <%= contract.description %> </p>
+            <p> <%= contract.price %> </p>
+            <p> <%= contract.rank %> </p>
+          </li>
+          <%= link_to "See your Selection !", contract_path(contract) %>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-lg-4">
+    <div class="card-product">
+      <img src="https://www.photosdecinema.com/5510-tm_thickbox_default/chacal-le-the-jackal.jpg">
+      <div class="card-product-infos">
+        <ul>
+        <% @contracts.each do |contract| %>
+          <li>
+           <h2> <%= contract.nickname %> </h2> <!--Le Chacal-->
+            <p> <%= contract.description %> </p>
+            <p> <%= contract.price %> </p>
+            <p> <%= contract.rank %> </p>
+          </li>
+          <%= link_to "See your Selection !", contract_path(contract) %>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-lg-4">
+    <div class="card-product">
+      <img src="http://www.fondsecran.eu/a/get_photo/526838/1280/800">
+      <div class="card-product-infos">
+        <ul>
+        <% @contracts.each do |contract| %>
+          <li>
+           <h2> <%= contract.nickname %> </h2> <!--Le Duo-->
+            <p> <%= contract.description %> </p>
+            <p> <%= contract.price %> </p>
+            <p> <%= contract.rank %> </p>
+          </li>
+          <%= link_to "See your Selection !", contract_path(contract) %>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </div>
