@@ -1,0 +1,20 @@
+<div class="container-show">
+  <div class="row">
+    <div class="col-6 show-half">
+      <div class="left">
+        <h1><%= @contract.nickname %></h1>
+        <%= image_tag "ben.png", alt: "ben" %>
+        <div class='characteristics'>
+          <p class="description"> <strong>Skills :</strong> <%= @contract.description%></p>
+          <p class="price"> <strong>Price :</strong> <%= @contract.price %> </p>
+          <p class="rank"> Rank : <%= @contract.rank %> </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 show-half">
+      <div class="left">
+        <%= render 'form', booking: @booking %>
+      </div>
+    </div>
+  </div>
+</div>
