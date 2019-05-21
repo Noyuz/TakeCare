@@ -13,7 +13,7 @@
             <p> <%= contract.price %> </p>
             <p> <%= contract.rank %> </p>
           </li>
-          <%= link_to "See your Selection !", contract_path(contract) %>
+          <%= link_to "See your Selection !", contract_path(contract), class: "toShow" %>
         <% end %>
         </ul>
       </div>
@@ -60,7 +60,7 @@
 
    <div class="col-sm-12 col-lg-4">
     <div class="card-product">
-      <img src="https://resizing.flixster.com/vZB0wMCjOFcG1sujS7Ag4qAYm54=/206x305/v1.bTsxMTIxOTUzNztqOzE4MTI5OzEyMDA7MTIwMDsxNjAw">
+      <%= image_tag "ben.png" %>
       <div class="card-product-infos">
         <ul>
         <% @contracts.each do |contract| %>
