@@ -1,1 +1,29 @@
-// Specific CSS for your home-page
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  p {
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+.left-elements {
+  display: flex;
+  align-items: center;
+  img {
+    width:40px;
+  }
+
+}
+
+.right-elements {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
