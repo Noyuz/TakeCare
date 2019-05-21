@@ -1,0 +1,17 @@
+<h1>Contracts List</h1>
+
+<div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
+  <div class="card-product-infos">
+    <ul>
+    <% @contracts.each do |contract| %>
+      <li>
+       <h4> <%= contract.nickname %> </h4>
+        <h2> <%= contract.description %> </h2>
+        <p> <%= contract.price %> </p>
+        <p> <%= contract.rank %> </p>
+      </li>
+    <% end %>
+    </ul>
+  </div>
+</div>

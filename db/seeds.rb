@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Contract.destroy_all
 
-ben = Contract.new(nickname: 'Ben', description: 'un bel enculé', price: '40 000$', rank: 'master')
-ben.save
+bob = Contract.new(nickname: 'Bob', description: 'Anonymous hacker', price: '500€/h', rank: 'Specialist', user_id: 1)
+bob.save
+
+
+
+
