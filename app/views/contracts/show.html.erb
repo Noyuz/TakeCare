@@ -1,11 +1,20 @@
-<h1>Contracts#Show</h1>
-
-<img src="TakeCare/app/assets/images/ben.png" alt="ben.png">
-<div class=container>
-  <h2><strong><%= @contract.nickname %></strong></h2>
- <h3>description : <%= @contract.description%></h3>
-  <h4>price :  <%= @contract.price %></h4>
-  <h5>rank : <%= @contract.rank %></h5>
+<div class="container-show">
+  <div class="row">
+    <div class="col-6 show-half">
+      <div class="left">
+        <h1><%= @contract.nickname %></h1>
+        <%= image_tag "ben.png", alt: "ben" %>
+        <div class='characteristics'>
+          <p class="description"> <strong>Skills :</strong> <%= @contract.description%></p>
+          <p class="price"> <strong>Price :</strong> <%= @contract.price %> </p>
+          <p class="rank"> Rank : <%= @contract.rank %> </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 show-half">
+      <div class="left">
+        <%= render 'form', booking: @booking %>
+      </div>
+    </div>
+  </div>
 </div>
-
-<%= render 'form', booking: @booking %>
