@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.left {
+.show-cards {
   width: 400px;
   height: 500px;
   background-image: url("https://img.freepik.com/free-photo/white-crumpled-paper-texture-background-close-up_64749-1851.jpg?size=626&ext=jpg");
@@ -28,21 +28,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px grey;
+
   img {
     width: 200px;
   }
   h1 {
+    font-size: 60px;
     text-align: center;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    border-top: solid 8px black;
+    border-bottom: solid 8px black;
   }
+
   p {
     margin: 0px;
   }
 }
 
 .characteristics {
-
+  border: solid 0.5px black;
+  border-radius: 3px;
+  padding: 10px;
 }
 
 // * {
