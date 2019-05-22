@@ -8,6 +8,6 @@
 
 Contract.destroy_all
 
-ben = Contract.new(nickname: 'Ben', description: 'un bel enculé', price: '40 000$', rank: 'master', user_id: 1)
+ben = Contract.new(nickname: 'Ben', description: 'un bel enfoiré', price: '40 000$', rank: 'master', user_id: 1)
 ben.save
 
