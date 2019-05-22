@@ -13,3 +13,8 @@ ben = Contract.new(nickname: 'Ben', description: 'un bel enfoiré', price: '40 0
 ben.remote_photo_url = url
 ben.save
 
+url = "https://res.cloudinary.com/dbgxfv2sg/image/upload/v1558538830/v23uwcxzghl9jozx4tlj.jpg"
+mamba = Contract.new(nickname: 'Mamaba', description: 'International assassin', price: '100000$', rank: 'pro', user_id: 56)
+mamba.remote_photo_url = url
+mamba.save
+
