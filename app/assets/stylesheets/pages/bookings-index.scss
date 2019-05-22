@@ -1,9 +1,10 @@
-
-
-.container-bookings-show {
-background-image: url("https://images.pexels.com/photos/479444/pexels-photo-479444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"), linear-gradient(#4094c4, #380f2c);
+.show-wrapper {
+// background-image: url("https://images.pexels.com/photos/479444/pexels-photo-479444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 background-size: cover;
 background-repeat: none;
+height: 100vh;
+width: 100vw;
+
 }
 
 .booking-title {
