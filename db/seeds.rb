@@ -8,6 +8,8 @@
 
 Contract.destroy_all
 
+url = "https://res.cloudinary.com/dbgxfv2sg/image/upload/v1558533341/gzojlsq4ao48kk16cso6.jpg"
 ben = Contract.new(nickname: 'Ben', description: 'un bel enculé', price: '40 000$', rank: 'master', user_id: 1)
+ben.remote_photo_url = url
 ben.save
 
