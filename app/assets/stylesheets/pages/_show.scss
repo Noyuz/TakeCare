@@ -24,6 +24,7 @@
   background-image: url("https://img.freepik.com/free-photo/white-crumpled-paper-texture-background-close-up_64749-1851.jpg?size=626&ext=jpg");
   background-repeat: none;
   background-size: cover;
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +51,27 @@
   border: solid 0.5px black;
   border-radius: 3px;
   padding: 10px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.show-form {
+  font-family: 'Inconsolata', monospace;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.btn-bouton-show {
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  background-color: #979ea5;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: normal;
+  opacity: 0.8;
+  font-weight: bolder;
+  &:hover {
+    background-color: red;
+  }
 }
 
 // * {

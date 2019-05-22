@@ -3,6 +3,8 @@ class ContractsController < ApplicationController
   before_action :set_contract, only: %i[show edit update destroy]
 
   def show
+    @contract = Contract.find(params[:id])
+    @booking = Booking.new
   end
 
   def index

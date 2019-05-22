@@ -1,0 +1,9 @@
+<body class="container-bookings-show">
+  <h1 class="booking-title">YOUR DASHBOARD</h1>
+
+  <ul class="bookings">
+    <% @bookings.each do |booking| %>
+    <li><%= "#{booking.title} : #{booking.description}" %></li>
+    <% end %>
+  </ul>
+</body>
