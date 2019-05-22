@@ -1,12 +1,11 @@
 <body class="container-bookings-show">
   <div class="show-wrapper" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://images.pexels.com/photos/479444/pexels-photo-479444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+      <h1 class="booking-title">Your Dashboard</h1>
 
-  <h1 class="booking-title">YOUR DASHBOARD</h1>
-
-  <ul class="bookings">
-    <% @bookings.each do |booking| %>
-    <li><%= "#{booking.title} : #{booking.description}" %></li>
-    <% end %>
-  </ul>
+      <ul class="bookings">
+        <% @bookings.each do |booking| %>
+        <li><%= "#{booking.title} : #{booking.description}" %></li>
+        <% end %>
+      </ul>
   </div>
 </body>
