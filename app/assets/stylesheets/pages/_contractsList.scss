@@ -1,20 +1,39 @@
+body {
+  font-family: "Inconsolata", monospace;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://images.pexels.com/photos/162389/lost-places-old-decay-ruin-162389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.indextitle{
+  text-align: center;
+  font-size: 72px;
+  color: white;
+  opacity: 0.7;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+
 .card-product {
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
   overflow: hidden;
-  height: 250px;
-  color: gray;
-  background: black;
+  height: 190px;
+  color: black;
+  background-image: url("https://img.freepik.com/free-photo/white-crumpled-paper-texture-background-close-up_64749-1851.jpg?size=626&ext=jpg");
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   margin: 16px;
-  width: 450px;
+  width: 440px;
+  border-radius: 5px;
+  opacity: 0.9;
 }
 
 .card-product img {
   height: 190px;
   width: 190px;
   object-fit: cover;
-  padding:8px;
 }
 
 .card-product h2 {
