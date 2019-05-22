@@ -1,21 +1,19 @@
 <h1 class="indextitle">Contracts List</h1>
 
-<div class= "row">
+<div class="container-fluid">
 
+<div class= "row">
   <div class="col-sm-12 col-lg-4">
     <%= link_to contract_path(@contracts.first) do %>
       <div class="card-product">
         <%= image_tag "ben.png" %>
         <div class="card-product-infos">
           <ul>
-          <% @contracts.each do |contract| %>
             <li>
-              <h2> <%= contract.nickname %> </h2> <!--Ben-->
+              <h2> <%= @contracts.first.nickname %> </h2> <!--Ben-->
               <p>#####CRIPTED######</p>
               <p>#####CRIPTED######</p>
             </li>
-            <%#= link_to "See your Selection !", contract_path(contract) %>
-          <% end %>
           </ul>
         </div>
       </div>
@@ -122,4 +120,5 @@
       </div>
     </div>
   <% end %>
+</div>
 </div>
