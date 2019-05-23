@@ -3,7 +3,7 @@
   <%= f.input :description %>
   <%= f.input :date, as: :date, required: false, input_html: {class: "datepicker"} %>
   <!--<input type="date" name="Date">-->
-   <%= link_to 'delete', @contracts_path,
+   <%#= link_to 'delete', @contracts_path,
           method: :delete,
           data: { confirm: "Are you sure?" } %>
   <%= f.button :submit, "Hire!", class: "btn-bouton-show" %>
