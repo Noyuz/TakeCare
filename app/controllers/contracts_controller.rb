@@ -1,16 +1,16 @@
 class ContractsController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
   before_action :set_contract, only: %i[show edit update destroy]
-
+  mount_uploader :photo, PhotoUploader
   def new
     @contract = Contract.new
   end
 
   def create
     @contract = Contract.new(contract_params)
-
-    if @contract.save!
-      redirect_to @contracts, notice: "Wellcome '#{rank}'"
+    @contract.user = current_user
+    if @contract.save
+      redirect_to @contract, notice: "Wellcome '#{@contract.rank}'"
     else
       render :new
     end
@@ -28,7 +28,7 @@ class ContractsController < ApplicationController
   private
 
   def contract_params
-    params.require(:contract).permit(:nickname, :description, :price, :rank)
+    params.require(:contract).permit(:nickname, :description, :price, :rank, :photo)
   end
 
   def set_contract
