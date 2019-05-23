@@ -11,6 +11,7 @@
     <div class="right-elements">
       <p><%= link_to "Devenir un bandit", new_contract_path %></p>
       <p><%= link_to "Dashboard", contract_bookings_path(:contract_id) %></p>
+      <p><%= link_to "Log out", destroy_user_session_path, :method => :delete %></p>
     </div>
   </div>
 

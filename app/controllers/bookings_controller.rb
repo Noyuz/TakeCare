@@ -15,7 +15,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
 
     if @booking.save
-      redirect_to contract_bookings_path(@contract)
+      redirect_to bookings_path
     else
       render 'contracts/show'
     end
