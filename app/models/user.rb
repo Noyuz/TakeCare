@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :contracts, dependent: :destroy
   has_many :bookings, dependent: :destroy
+
+  #has_many :rents, through: :contracts, to: :bookings
 end
