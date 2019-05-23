@@ -2,6 +2,10 @@ class ContractsController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
   before_action :set_contract, only: %i[show edit update destroy]
 
+  def new
+    @contract = Contract.new
+  end
+
   def show
     @contract = Contract.find(params[:id])
     @booking = Booking.new
