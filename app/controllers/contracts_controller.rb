@@ -1,7 +1,7 @@
 class ContractsController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
   before_action :set_contract, only: %i[show edit update destroy]
-  mount_uploader :photo, PhotoUploader
+
   def new
     @contract = Contract.new
   end
