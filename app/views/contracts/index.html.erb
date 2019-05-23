@@ -5,8 +5,8 @@
 <div class="container-index">
   <div class= "row">
     <% @contracts.each do |contract| %>
-      <div class="col-sm-12 col-lg-4">
         <%= link_to contract_path(contract) do %>
+      <div class="col-sm-12 col-lg-4">
           <div class="card-product">
             <%= cl_image_tag contract.photo %>
             <div class="card-product-infos">
@@ -16,7 +16,6 @@
                   <p>#####CRIPTED######</p>
                   <p>#####CRIPTED######</p>
                 </li>
-                <%#= link_to "See your Selection !", contract_path(contract) %>
               <% end %>
               </ul>
             </div>

@@ -11,8 +11,7 @@
   font-size: 72px;
   color: white;
   opacity: 0.7;
-  // margin-top: 32px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding-top: 100px;
 }
 
@@ -21,21 +20,21 @@
   text-decoration: none;
   font-family: "Inconsolata", monospace;
   overflow: hidden;
-  height: 190px;
+  height: 180px;
   color: black;
   background-image: url("https://img.freepik.com/free-photo/white-crumpled-paper-texture-background-close-up_64749-1851.jpg?size=626&ext=jpg");
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   margin: 16px;
-  width: 440px;
+  width: 420px;
   border-radius: 5px;
   opacity: 0.9;
 }
 
 .card-product img {
-  height: 190px;
-  width: 190px;
+  height: 180px;
+  width: 180px;
   object-fit: cover;
 }
 
@@ -61,5 +60,6 @@ li {
 }
 
 .container-index{
+  display: flex;
   width: 100%;
 }
