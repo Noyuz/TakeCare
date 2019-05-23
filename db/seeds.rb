@@ -18,5 +18,3 @@ mamba = Contract.new(nickname: 'Mamaba', description: 'International assassin', 
 mamba.remote_photo_url = url
 mamba.save
 
-user3 = User.new(email: "Bob@mail.com")
-user3.save
