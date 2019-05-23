@@ -16,6 +16,12 @@ class ContractsController < ApplicationController
     end
   end
 
+  def destroy
+    @contract = Contract.find(params[:id])
+    @contract.destroy
+    redirect_to @contracts_path
+  end
+
   def show
     @contract = Contract.find(params[:id])
     @booking = Booking.new
