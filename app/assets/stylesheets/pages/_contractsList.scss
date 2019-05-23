@@ -2,8 +2,7 @@
   font-family: "Inconsolata", monospace;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100vw;
+
   background-image: url('https://images.pexels.com/photos/162389/lost-places-old-decay-ruin-162389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 }
 .indextitle{
@@ -20,14 +19,14 @@
   text-decoration: none;
   font-family: "Inconsolata", monospace;
   overflow: hidden;
-  height: 180px;
   color: black;
   background-image: url("https://img.freepik.com/free-photo/white-crumpled-paper-texture-background-close-up_64749-1851.jpg?size=626&ext=jpg");
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  margin: 16px;
-  width: 420px;
+  margin: 8px;
+  height: 160px;
+  width: 400px;
   border-radius: 5px;
   opacity: 0.9;
 }
