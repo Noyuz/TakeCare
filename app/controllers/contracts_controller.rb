@@ -6,6 +6,16 @@ class ContractsController < ApplicationController
     @contract = Contract.new
   end
 
+  def create
+    @contract = Contract.new(contract_params)
+
+    if @contract.save!
+      redirect_to @contracts, notice: "Wellcome '#{rank}'"
+    else
+      render :new
+    end
+  end
+
   def show
     @contract = Contract.find(params[:id])
     @booking = Booking.new
