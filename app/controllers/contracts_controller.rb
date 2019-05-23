@@ -28,7 +28,7 @@ class ContractsController < ApplicationController
   private
 
   def contract_params
-    params.require(:contract).permit(:nickname, :description, :price, :rank, :photo)
+    params.require(:contract).permit(:nickname, :description, :price, :rank, :photo, :date)
   end
 
   def set_contract
