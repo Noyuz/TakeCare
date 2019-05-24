@@ -3,15 +3,15 @@
 <div class="container-show">
     <p class= "mybookings-link" ><%= link_to 'TakingCare', root_path %></p>
   <h1 class= "mybookings-title">My bookings</h1>
-  <div class="row row-height">
+  <div class="row">
     <div class="col-6 show-half">
       <div class="show-cards">
-        <h2><%= @rents.first.contract.nickname %></h2>
-        <%= cl_image_tag @rents.first.contract.photo %>
+        <h2><%= current_user.contracts.first.nickname %></h2>
+        <%= cl_image_tag current_user.contracts.first.photo %>
         <div class='characteristics'>
-          <p class="description"> <strong>Skills :</strong> <%= @rents.first.contract.description%></p>
-          <p class="price"> <strong>Price :</strong> <%= @rents.first.contract.price %> </p>
-          <p class="rank"> Rank : <%= @rents.first.contract.rank %> </p>
+          <p class="description"> <strong>Skills :</strong> <%= current_user.contracts.first.description%></p>
+          <p class="price"> <strong>Price :</strong> <%= current_user.contracts.first.price %> </p>
+          <p class="rank"> Rank : <%= current_user.contracts.first.rank %> </p>
         </div>
       </div>
     </div>
