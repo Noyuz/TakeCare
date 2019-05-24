@@ -1,22 +1,34 @@
 
-
 <html>
   <head>
   </head>
   <body>
-   <div class="container-mybookings">
-
+   <div class= "container-mybookings">
+    <div class= "row">
+      <div class= "col-6">
+        <div class= "show-cards"></div>
+        <h1><%= @contract.nickname %></h1>
+        <%= cl_image_tag @contract.photo %>
+        <div class='characteristics'>
+          <p class="description"> <strong>Skills :</strong> <%= @contract.description%></p>
+          <p class="price"> <strong>Price :</strong> <%= @contract.price %> </p>
+          <p class="rank"> Rank : <%= @contract.rank %> </p>
+      </div>
+    </div>
+    <div>
+      <div class= "col-6">
+        <div class= "show-form">
+          <h2>Who's next?</h2>
+          <% @rents.each do |rent| %>
+            <p><%= rent.title %></p>
+            <p><%= rent.contract.nickname %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
    </div>
   </body>
 </html>
 
 
-
-
-
-
-<% @rents.each do |rent| %>
-  <p><%= rent.title %></p>
-  <p><%= rent.contract.nickname %></p>
-<% end %>
 
