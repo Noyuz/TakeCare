@@ -1,22 +1,32 @@
 
 
-<html>
-  <head>
-  </head>
-  <body>
-   <div class="container-mybookings">
+<div class="container-show">
+    <p class= "mybookings-link" ><%= link_to 'TakingCare', root_path %></p>
+  <h1 class= "mybookings-title">My bookings</h1>
+  <div class="row row-height">
+    <div class="col-6 show-half">
+      <div class="show-cards">
+        <h2><%= @rents.first.contract.nickname %></h2>
+        <%= cl_image_tag @rents.first.contract.photo %>
+        <div class='characteristics'>
+          <p class="description"> <strong>Skills :</strong> <%= @rents.first.contract.description%></p>
+          <p class="price"> <strong>Price :</strong> <%= @rents.first.contract.price %> </p>
+          <p class="rank"> Rank : <%= @rents.first.contract.rank %> </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 show-half">
+      <div class="show-cards">
+        <h2>Who's next?</h2>
+         <ul>
+           <li>- Ryan's bodyguard </li>
+           <li>- Bertrand's kidnapping, special demand from le Wagon's students : they want their certification.</li>
+           <li>- Trump's assassination to save the world.</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-   </div>
-  </body>
-</html>
 
-
-
-
-
-
-<% @rents.each do |rent| %>
-  <p><%= rent.title %></p>
-  <p><%= rent.contract.nickname %></p>
-<% end %>
 

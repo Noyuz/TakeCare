@@ -1,0 +1,62 @@
+.container-show {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/479444/pexels-photo-479444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  position: absolute;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+}
+
+.mybookings-title {
+  color: black;
+  font-family: 'Inconsolata', monospace;
+  font-size:72px;
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+}
+
+.show-cards {
+  width: 400px;
+  height: 500px;
+  background-image: url("https://img.freepik.com/free-photo/white-crumpled-paper-texture-background-close-up_64749-1851.jpg?size=626&ext=jpg");
+  background-repeat: none;
+  background-size: cover;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px grey;
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  padding: 8px;
+  img {
+    width: 200px;
+  }
+  h2 {
+    font-size: 60px;
+    text-align: center;
+    border-top: solid 8px black;
+    border-bottom: solid 8px black;
+  }
+
+  p {
+    margin: 0px;
+  }
+}
+
+.mybookings-link {
+  padding: 16px;
+  font-family: 'Inconsolata', monospace;
+  font-size:20px;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+  }
+}
