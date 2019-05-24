@@ -1,0 +1,21 @@
+.new-body{
+  background-image: url("https://images.pexels.com/photos/479444/pexels-photo-479444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+}
+
+.new-title{
+  opacity: .8;
+  padding: 64px;
+}
+
+.new-container {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  font-weight: bolder;
+  font-family: 'Inconsolata', monospace;
+
+}

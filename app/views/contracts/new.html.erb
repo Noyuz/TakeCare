@@ -1,0 +1,17 @@
+<body class="new-body">
+
+
+<h1 class="new-title"> Join us...Earn money !</h1>
+
+<div class="new-container">
+  <%= simple_form_for @contract do |f| %>
+    <%= f.input :nickname %>
+    <%= f.input :description %>
+    <%= f.input :price%>
+    <%= f.input :rank%>
+    <%= f.input :photo %>
+    <%= f.input :photo_cache, as: :hidden %>
+    <%= f.submit "$$$" %>
+  <% end %>
+</div>
+</body>
