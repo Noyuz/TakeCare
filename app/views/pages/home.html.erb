@@ -1,16 +1,19 @@
+<html>
 <head>
 </head>
 
 <body>
   <div class="navbar">
     <div class="left-elements">
-      <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+      <%#= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
       <p>TakingCare</p>
     </div>
 
     <div class="right-elements">
-      <p><%= link_to "Devenir un bandit" %></p>
-      <p><%= link_to "Dashboard" %></p>
+      <p><%= link_to "Become a killer", new_contract_path %></p>
+      <p><%= link_to "Manage my profile", my_bookings_path %></p>
+      <p><%= link_to "Dashboard", bookings_path %></p>
+      </p>
     </div>
   </div>
 
@@ -26,6 +29,9 @@
   </div>
   <div class="right">
     <div class="right-container">
+      <div class="bottom-elements">
+        <p><%= link_to "Log out", destroy_user_session_path, :method => :delete %></p>
+      </div>
     </div>
   </div>
 
@@ -33,3 +39,4 @@
 
 <%= link_to "Contracts Index", contracts_path, class: "toIndex"%>
 
+</html>

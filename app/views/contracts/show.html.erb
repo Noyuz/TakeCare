@@ -3,7 +3,7 @@
     <div class="col-6 show-half">
       <div class="show-cards">
         <h1><%= @contract.nickname %></h1>
-        <%= image_tag "ben.png", alt: "ben" %>
+        <%= cl_image_tag @contract.photo %>
         <div class='characteristics'>
           <p class="description"> <strong>Skills :</strong> <%= @contract.description%></p>
           <p class="price"> <strong>Price :</strong> <%= @contract.price %> </p>
@@ -13,7 +13,9 @@
     </div>
     <div class="col-6 show-half">
       <div class="show-cards">
-        <%= render 'form', booking: @booking %>
+        <div class="show-form">
+          <%= render 'contracts/form' %>
+        </div>
       </div>
     </div>
   </div>
