@@ -10,10 +10,10 @@
   font-size: 72px;
   color: white;
   opacity: 0.7;
-  margin-bottom: 30px;
-  padding-top: 100px;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  margin-top: 60px;
 }
-
 
 .card-product {
   text-decoration: none;
@@ -61,4 +61,20 @@ li {
 .container-index{
   display: flex;
   width: 100%;
+}
+
+#root-button-index {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 22px;
+  padding: 24px;
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+  }
+  a:hover {
+    color: red;
+  }
 }

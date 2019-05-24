@@ -1,26 +1,29 @@
 <div class="index-wrapper">
-<h1 class="indextitle">Contracts List</h1>
-
-
-<div class="container-index">
-  <div class= "row">
-    <% @contracts.each do |contract| %>
-        <%= link_to contract_path(contract) do %>
-      <div class="col-sm-6 col-lg-4">
-          <div class="card-product">
-            <%= cl_image_tag contract.photo %>
-            <div class="card-product-infos">
-              <ul>
-                <li>
-                  <h2> <%= contract.nickname %> </h2> <!--Ben-->
-                  <p>#####CRIPTED######</p>
-                  <p>#####CRIPTED######</p>
-                </li>
-              <% end %>
-              </ul>
-            </div>
-          </div>
-      </div>
-    <% end %>
+  <div id="root-button-index">
+    <%= link_to 'TakingCare', root_path %>
   </div>
-</div>
+  <h1 class="indextitle">Contracts List</h1>
+
+
+  <div class="container-index">
+    <div class= "row">
+      <% @contracts.each do |contract| %>
+      <%= link_to contract_path(contract) do %>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card-product">
+          <%= cl_image_tag contract.photo %>
+          <div class="card-product-infos">
+            <ul>
+              <li>
+                <h2> <%= contract.nickname %> </h2> <!--Ben-->
+                <p>#####CRIPTED######</p>
+                <p>#####CRIPTED######</p>
+              </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>

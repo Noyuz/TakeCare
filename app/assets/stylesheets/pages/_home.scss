@@ -1,12 +1,12 @@
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  position : relative;
-}
+// html {
+//   height: 100%;
+// }
+// body {
+//   min-height: 100%;
+//   margin: 0;
+//   padding: 0;
+//   position : relative;
+// }
 
 .navbar {
   display: flex;
@@ -35,6 +35,7 @@ body {
 .right-elements {
   display: flex;
   align-items: center;
+  font-size: 18px;
   a {
     color: white;
     text-decoration: none;
