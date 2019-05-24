@@ -1,11 +1,12 @@
+
+<div class="container">
 <%= simple_form_for [@contract, @booking] do |f| %>
   <%= f.input :title, collection: Contract::MISSION %>
   <%= f.input :description %>
   <%= f.input :date, as: :date, required: false, input_html: {class: "datepicker"} %>
-  <!--<input type="date" name="Date">-->
    <%#= link_to 'delete', @contracts_path,
           method: :delete,
           data: { confirm: "Are you sure?" } %>
   <%= f.button :submit, "Hire!", class: "btn-bouton-show" %>
 <% end %>
-
+</div>
