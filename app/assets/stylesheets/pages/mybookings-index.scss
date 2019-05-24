@@ -1,21 +1,20 @@
 .container-show {
   width: 100vw;
   height: 100vh;
-  background-image: url("https://images.pexels.com/photos/162389/lost-places-old-decay-ruin-162389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/479444/pexels-photo-479444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   position: absolute;
+  background-size: cover;
   bottom: 0;
   right: 0;
 }
 
-.row-height {
-  height: 100vh;
-}
-
-.show-half {
+.mybookings-title {
+  color: black;
+  font-family: 'Inconsolata', monospace;
+  font-size:72px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 17px;
 }
 
 .show-cards {
@@ -31,7 +30,9 @@
   justify-content: space-evenly;
   border-radius: 5px;
   box-shadow: 1px 1px 1px grey;
-
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  padding: 8px;
   img {
     width: 200px;
   }
@@ -40,7 +41,6 @@
     text-align: center;
     border-top: solid 8px black;
     border-bottom: solid 8px black;
-
   }
 
   p {
@@ -48,29 +48,15 @@
   }
 }
 
-.characteristics {
-  border: solid 0.5px black;
-  border-radius: 3px;
-  padding: 10px;
+.mybookings-link {
+  padding: 16px;
   font-family: 'Inconsolata', monospace;
-}
-
-.show-form {
-  font-family: 'Inconsolata', monospace;
-  font-size: 32px;
-  font-weight: bolder;
-}
-
-.btn-bouton-show {
-  color: white;
-  font-family: 'Inconsolata', monospace;
-  background-color: #979ea5;
-  border-radius: 5px;
-  font-size: 22px;
-  font-weight: normal;
-  opacity: 0.8;
-  font-weight: bolder;
-  &:hover {
-    background-color: red;
+  font-size:20px;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
   }
 }
