@@ -16,6 +16,12 @@ class ContractsController < ApplicationController
     end
   end
 
+  def destroy
+    @contract = Contract.find(params[:id])
+    @contract.destroy
+    redirect_to @contracts_path
+  end
+
   def show
     @contract = Contract.find(params[:id])
     @booking = Booking.new
@@ -28,7 +34,7 @@ class ContractsController < ApplicationController
   private
 
   def contract_params
-    params.require(:contract).permit(:nickname, :description, :price, :rank, :photo)
+    params.require(:contract).permit(:nickname, :description, :price, :rank, :photo, :date)
   end
 
   def set_contract

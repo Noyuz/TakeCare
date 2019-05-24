@@ -5,7 +5,7 @@
 <body>
   <div class="navbar">
     <div class="left-elements">
-      <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+      <%#= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
       <p>TakingCare</p>
     </div>
 
@@ -13,6 +13,7 @@
       <p><%= link_to "Become a killer", new_contract_path %></p>
       <p><%= link_to "Manage my profile", my_bookings_path %></p>
       <p><%= link_to "Dashboard", bookings_path %></p>
+      <p><%= link_to "Log out", destroy_user_session_path, :method => :delete %></p>
     </div>
   </div>
 

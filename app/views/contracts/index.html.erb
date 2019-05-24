@@ -6,7 +6,7 @@
   <div class= "row">
     <% @contracts.each do |contract| %>
         <%= link_to contract_path(contract) do %>
-      <div class="col-sm-12 col-lg-4">
+      <div class="col-sm-6 col-lg-4">
           <div class="card-product">
             <%= cl_image_tag contract.photo %>
             <div class="card-product-infos">
