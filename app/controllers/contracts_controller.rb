@@ -10,7 +10,7 @@ class ContractsController < ApplicationController
     @contract = Contract.new(contract_params)
     @contract.user = current_user
     if @contract.save
-      redirect_to contracts_path, notice: "Wellcome '#{@contract.nickname}'"
+      redirect_to contracts_path, notice: "Welcome '#{@contract.nickname}'"
     else
       render :new
     end

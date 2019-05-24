@@ -1,6 +1,14 @@
-<body class="container-bookings-show">
-  <div class="show-wrapper" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://images.pexels.com/photos/479444/pexels-photo-479444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
-      <h1 class="booking-title">Your Dashboard</h1>
+<div class="bookings-wrapper" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://images.pexels.com/photos/479444/pexels-photo-479444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+  <div id="bouton-home">
+  <%= link_to 'Home', root_path, class: 'btn bouton' %>
+  </div>
+  <h1 class="booking-title mb-5">Operations</h1>
+    <div id="bouton-contracts">
+  <%= link_to "See more contracts", contracts_path(@contracts), class: 'btn bouton' %>
+  </div>
+  <div class="row">
+
+    <div class="col-6 show-half">
 
       <ul class="bookings">
         <% @bookings.each do |booking| %>
@@ -12,5 +20,31 @@
         <% end %>
       </ul>
     <%= link_to "Whant more ?", contracts_path(@contracts), class: "btn bouton" %>
+
+      <div class="bookings-cards">
+
+        <ul class="my_bookings">
+          <h2><strong>My current missions</strong></h2>
+          <% @bookings.each do |booking| %>
+          <li><%= "#{booking.title} : #{booking.description}" %></li>
+          <%= link_to 'edit', edit_booking_path(booking), class: 'btn bouton' %>
+          <%= link_to 'delete', booking_path(booking),
+          method: :delete,
+          data: { confirm: "Are you sure?" },
+          class: 'btn bouton' %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <div class="col-6 show-half">
+      <div class="bookings-cards">
+        <h2> <strong>My previous missions</strong></h2>
+      </div>
+    </div>
   </div>
-</body>
+
+  <i class="text-white fas fa-2x fa-chevron-down pulse"></i>
+</div>
+
+<div id="photo-google" style="background-image: url('/assets/classified.png')">
+</div>
