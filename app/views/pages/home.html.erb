@@ -1,3 +1,4 @@
+<html>
 <head>
 </head>
 
@@ -10,7 +11,8 @@
 
     <div class="right-elements">
       <p><%= link_to "Become a killer", new_contract_path %></p>
-      <p><%= link_to "Dashboard", contract_bookings_path(:contract_id) %></p>
+      <p><%= link_to "Manage my profile", my_bookings_path %></p>
+      <p><%= link_to "Dashboard", bookings_path %></p>
       <p><%= link_to "Log out", destroy_user_session_path, :method => :delete %></p>
     </div>
   </div>
@@ -27,6 +29,9 @@
   </div>
   <div class="right">
     <div class="right-container">
+      <div class="bottom-elements">
+        <p><%= link_to "Log out", destroy_user_session_path, :method => :delete %></p>
+      </div>
     </div>
   </div>
 
@@ -34,3 +39,4 @@
 
 <%= link_to "Contracts Index", contracts_path, class: "toIndex"%>
 
+</html>

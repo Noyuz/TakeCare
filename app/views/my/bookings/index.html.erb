@@ -1,0 +1,22 @@
+
+
+<html>
+  <head>
+  </head>
+  <body>
+   <div class="container-mybookings">
+
+   </div>
+  </body>
+</html>
+
+
+
+
+
+
+<% @rents.each do |rent| %>
+  <p><%= rent.title %></p>
+  <p><%= rent.contract.nickname %></p>
+<% end %>
+
