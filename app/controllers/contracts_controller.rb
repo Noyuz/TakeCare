@@ -10,10 +10,16 @@ class ContractsController < ApplicationController
     @contract = Contract.new(contract_params)
     @contract.user = current_user
     if @contract.save
-      redirect_to @contract, notice: "Welcome '#{@contract.rank}'"
+      redirect_to contracts_path, notice: "Welcome '#{@contract.nickname}'"
     else
       render :new
     end
+  end
+
+  def destroy
+    @contract = Contract.find(params[:id])
+    @contract.destroy
+    redirect_to @contracts_path
   end
 
   def show
@@ -28,7 +34,7 @@ class ContractsController < ApplicationController
   private
 
   def contract_params
-    params.require(:contract).permit(:nickname, :description, :price, :rank, :photo)
+    params.require(:contract).permit(:nickname, :description, :price, :rank, :photo, :date)
   end
 
   def set_contract

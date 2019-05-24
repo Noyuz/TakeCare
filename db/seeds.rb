@@ -14,7 +14,7 @@ bond.remote_photo_url = url
 bond.save
 
 url = "https://res.cloudinary.com/dbgxfv2sg/image/upload/v1558538830/v23uwcxzghl9jozx4tlj.jpg"
-mamba = Contract.new(nickname: 'Mamaba', description: 'international assassin', price: '150.000$', rank: 'pro', user_id: 2)
+mamba = Contract.new(nickname: 'Mamba', description: 'international assassin', price: '150.000$', rank: 'pro', user_id: 2)
 mamba.remote_photo_url = url
 mamba.save
 

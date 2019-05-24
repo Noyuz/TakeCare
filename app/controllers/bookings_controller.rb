@@ -13,7 +13,6 @@ class BookingsController < ApplicationController
     @booking = Booking.new(set_booking_params)
     @booking.contract = @contract
     @booking.user = current_user
-
     if @booking.save
       redirect_to bookings_path
     else

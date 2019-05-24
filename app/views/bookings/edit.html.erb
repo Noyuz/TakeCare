@@ -1,5 +1,6 @@
 <%= simple_form_for [@contract, @booking] do |f| %>
 <%= f.input :title, collection: Contract::MISSION %>
 <%= f.input :description %>
+<input type="date" name="Date">
 <%= f.button :submit, "Update", class: "btn-bouton-show" %>
 <% end %>
